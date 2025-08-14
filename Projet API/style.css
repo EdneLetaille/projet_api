@@ -1,0 +1,98 @@
+/* Style global */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Variables thème clair par défaut */
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --table-bg: white;
+  --table-header-bg: #4CAF50;
+  --table-header-text: white;
+  --table-border: #ddd;
+}
+
+/* Thème sombre */
+body.dark {
+  --bg-color: #222;
+  --text-color: #eee;
+  --table-bg: #333;
+  --table-header-bg: #555;
+  --table-header-text: #fff;
+  --table-border: #555;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Barre de recherche et filtre */
+#search, #cityFilter, #toggleTheme {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid var(--table-border);
+  border-radius: 4px;
+}
+
+/* Bouton clair/sombre */
+#toggleTheme {
+  cursor: pointer;
+  background-color: var(--table-header-bg);
+  color: var(--table-header-text);
+  border: none;
+}
+
+/* Tableau */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  background-color: var(--table-bg);
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+thead {
+  background-color: var(--table-header-bg);
+  color: var(--table-header-text);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--table-border);
+}
+
+tr:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+/* Liens */
+a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #0d47a1; /* Bleu plus profond */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  letter-spacing: 3px;
+  background: linear-gradient(to right, #42a5f5, #0d47a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer{
+    text-align: center;
+}

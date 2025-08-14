@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion des Contacts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Gestion des Contacts</h1>
+
+  <!-- Barre de recherche -->
+  <input type="text" id="search" placeholder="Rechercher par nom ou pseudo">
+
+  <!-- Filtre par ville -->
+  <select id="cityFilter">
+    <option value="">Toutes les villes</option>
+    <!-- Les options seront ajoutées en JS -->
+  </select>
+
+  <!-- Bouton thème -->
+  <button id="toggleTheme">🌙 Mode sombre</button>
+
+  <!-- Tableau des contacts -->
+  <table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Pseudo</th>
+        <th>Email</th>
+        <th>Téléphone</th>
+        <th>Site Web</th>
+        <th>Adresse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Les lignes seront générées par JS -->
+    </tbody>
+  </table>
+  <!-- Pied de page -->
+  <footer>
+    <p>© 2025 - Site préparé par Edner Letaille</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
